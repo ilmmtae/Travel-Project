@@ -15,8 +15,18 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from rest_framework_nested import routers
+
+from trips.views import ProjectViewSet, PlaceViewSet
+
+router = routers.SimpleRouter()
+router.register(r'projects', ProjectViewSet)
+
+projects_router = routers.NestedSimpleRouter(router, r'projects', lookup='project')
+projects_router.register(r'places', PlaceViewSet, basename='project-places')
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('', include(router.urls)),
+    path('', include(projects_router.urls)),
 ]
