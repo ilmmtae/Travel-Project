@@ -8,7 +8,7 @@
   },
   "item": [
     {
-      "name": "POST",
+      "name": "Create Project",
       "request": {
         "auth": {
           "type": "noauth"
@@ -40,7 +40,7 @@
       "response": []
     },
     {
-      "name": "GET",
+      "name": "List Projects",
       "request": {
         "auth": {
           "type": "noauth"
@@ -87,7 +87,7 @@
       "response": []
     },
     {
-      "name": "PATCH",
+      "name": "Update",
       "request": {
         "auth": {
           "type": "noauth"
@@ -120,7 +120,7 @@
       "response": []
     },
     {
-      "name": "DELETE",
+      "name": "Delete",
       "request": {
         "auth": {
           "type": "noauth"

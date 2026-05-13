@@ -20,6 +20,21 @@ A RESTful backend application designed to manage travel itineraries and curated 
     - **Integrity Protection**: Projects with visited locations are protected from deletion.
     - **Dynamic Status**: Project completion is dynamically calculated based on the visited status of all linked places.
 
+## 🧪 API Testing & Documentation
+
+You can test the API using either the public Postman collection link or the local JSON file provided in the repository.
+
+### Option 1: Public Postman Workspace (Recommended)
+Access the live collection with pre-configured requests and documentation here:
+👉 **[View Postman Collection](https://veronikanazaryk8-8421330.postman.co/workspace/%D0%92%D0%B5%D1%80%D0%BE%D0%BD%D1%96%D0%BA%D0%B0-%D0%9D%D0%B0%D0%B7%D0%B0%D1%80%D1%83%D0%BA's-Workspace~ff954802-733e-459e-8fed-fe28761077d4/collection/54805060-911e3c2c-f62e-43f6-985e-792f6c9c23fb?action=share&source=copy-link&creator=54805060)**
+
+### Option 2: Local Import
+1. Import the `travel_planner_collection.json` file from the root directory into your Postman app.
+2. The collection includes automated tests for:
+   - **Nested Creation**: Creating projects and places in a single call.
+   - **Validation**: Testing against the Art Institute of Chicago API.
+   - **Business Logic**: Verifying the 10-place limit and deletion protection for visited projects.
+
 ## 🚦 Quick Start
 
 ### 1. Environment Setup
