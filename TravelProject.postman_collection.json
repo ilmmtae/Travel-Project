@@ -1,0 +1,43 @@
+{
+  "info": {
+    "_postman_id": "911e3c2c-f62e-43f6-985e-792f6c9c23fb",
+    "name": "TravelProject",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54805060",
+    "_collection_link": "https://go.postman.co/collection/54805060-911e3c2c-f62e-43f6-985e-792f6c9c23fb?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Project test",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Trip to Chicago\",\r\n    \"description\": \"Visiting museums\",\r\n    \"start_date\": \"2026-06-01\",\r\n    \"places\": [\r\n        {\"external_id\": \"129454\", \"notes\": \"Check this artwork\"}\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8000/projects/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "projects",
+            ""
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
